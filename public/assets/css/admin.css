@@ -1,0 +1,51 @@
+:root{--bg:#0B0F19;--bg2:#151D2E;--gold:#D6AD60;--txt:#fff;--mut:#AAB2C0;--ok:#4ade80;--err:#f87171;--warn:#fbbf24}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:15px/1.45 Montserrat,Inter,"Segoe UI",Arial,sans-serif}
+a{color:var(--gold)}
+.top{display:flex;align-items:center;gap:20px;padding:10px 20px;background:var(--bg2);border-bottom:1px solid #26314a;position:sticky;top:0;z-index:5}
+.logo{color:var(--gold);letter-spacing:.08em}
+.top nav{display:flex;gap:6px;flex:1}
+.top nav a{color:var(--mut);text-decoration:none;padding:6px 12px;border-radius:8px}
+.top nav a.on,.top nav a:hover{background:#26314a;color:#fff}
+.out{font-size:13px}
+main{max-width:1500px;margin:0 auto;padding:20px}
+h1{margin:.2em 0 .6em}h1 small{color:var(--mut);font-weight:400}h2{margin-top:0;font-size:17px;color:var(--gold)}
+.card{background:var(--bg2);border:1px solid #26314a;border-radius:12px;padding:16px;margin-bottom:14px;color:var(--txt);text-decoration:none;display:block}
+a.card:hover{border-color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.stat span{color:var(--mut);font-size:13px;display:block}.stat b{font-size:22px}
+.okc{color:var(--ok)}.warnc{color:var(--warn)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
+label{display:flex;flex-direction:column;gap:4px;margin-bottom:10px;color:var(--mut);font-size:13px}
+input,select,button{font:inherit;color:var(--txt)}
+input,select{background:var(--bg);border:1px solid #33425f;border-radius:8px;padding:8px 10px}
+input:focus,select:focus{outline:2px solid var(--gold)}
+button{background:#26314a;border:1px solid #33425f;border-radius:8px;padding:9px 14px;cursor:pointer}
+button:hover:not(:disabled){filter:brightness(1.25)}button:disabled{opacity:.4;cursor:not-allowed}
+.primary{background:#2563eb;border-color:#2563eb}.gold{background:var(--gold);border-color:var(--gold);color:#111;font-weight:700}.danger{background:#7f1d1d;border-color:#991b1b}
+.big{width:100%;padding:14px;font-size:16px;margin:10px 0}
+.inline{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end}.inline h2{width:100%;margin:0}.inline label{margin:0}
+.row{display:flex;gap:8px;align-items:center;margin:8px 0;flex-wrap:wrap}
+.flash{padding:10px 14px;border-radius:8px;margin-bottom:12px}.flash.ok{background:#14532d}.flash.err{background:#7f1d1d}.flash.warn{background:#78350f}
+.badge{padding:3px 10px;border-radius:99px;font-size:12px;background:#26314a}.badge.on{background:#14532d;color:var(--ok)}.badge.off{color:var(--mut)}.badge.warn{background:#78350f;color:var(--warn)}
+.tbl{width:100%;border-collapse:collapse;margin-bottom:12px}.tbl th,.tbl td{padding:8px;border-bottom:1px solid #26314a;text-align:left}.tbl th{color:var(--mut);font-weight:500}
+.tbl.small td{font-size:13px;color:var(--mut)}.tot td{font-weight:700;color:var(--gold)}
+.vin{width:120px;font-size:18px}
+.thumb{max-height:80px;border-radius:8px}.thumb.s{height:36px;width:36px;object-fit:cover;border-radius:50%;vertical-align:middle}
+.comp summary{cursor:pointer;display:flex;gap:12px;align-items:center}.comp .num{background:var(--gold);color:#111;font-weight:700;border-radius:50%;width:30px;height:30px;display:grid;place-items:center}
+.comp form{margin-top:12px}
+.mut{color:var(--mut)}.small{font-size:12px}
+.login{display:grid;place-items:center;min-height:100vh}.loginbox{width:340px}.loginbox h1{color:var(--gold);text-align:center;margin:0}
+.ctrl{display:grid;grid-template-columns:340px 1fr 340px;gap:14px;align-items:start}
+@media(max-width:1200px){.ctrl{grid-template-columns:1fr}}
+#scenes{display:grid;gap:6px;margin-bottom:12px}
+.scene{text-align:left}.scene.sel{border-color:var(--gold);background:#3a3020}.scene.live{box-shadow:inset 4px 0 0 var(--ok)}.scene.locked{opacity:.55}
+.pv{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:8px;overflow:hidden}
+.pv iframe{position:absolute;left:0;top:0;width:1920px;height:1080px;border:0;transform-origin:0 0}
+.chk{flex-direction:row;align-items:center;gap:8px}
+
+/* scène suivante (préchargée) */
+.next{margin:12px 0;padding:10px 14px;border:1px solid #33425f;border-radius:10px}
+.next label{margin:8px 0}
+.next .ok{color:var(--ok)}
+.phase-badge{display:inline-block;margin-left:12px;padding:4px 14px;border-radius:99px;background:#3a3020;color:var(--gold);border:1px solid var(--gold);font-size:14px;font-weight:600;vertical-align:middle}

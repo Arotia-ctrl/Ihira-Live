@@ -1,0 +1,23 @@
+# Ignore PHP and Composer stuff
+/vendor/
+composer.lock
+
+# Node modules (if any)
+node_modules/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+
+# SQLite databases (generated files)
+database/*.sqlite*
+
+# IDE/editor settings
+.idea/
+.vscode/
+
+# Environment files
+.env
