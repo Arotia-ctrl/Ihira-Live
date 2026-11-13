@@ -1,5 +1,7 @@
 # IHIRA LIVE
 
+https://french-stream.net/15120351-miraculous-les-aventures-de-ladybug-et-chat-noir-saison-6-2015.html
+
 Application locale (PHP 8 + SQLite) de gestion des notes du jury, des votes du public (3 phases) et de diffusion des résultats via OBS Studio. 100 % hors ligne.
 
 ## Installation (Windows 11)
